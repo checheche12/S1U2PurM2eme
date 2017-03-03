@@ -1,0 +1,153 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Supreme.MainWindow"
+        Title="MainWindow" Height="638.5" Width="1050" OpacityMask="Black">
+    <Grid HorizontalAlignment="Left" Height="380" VerticalAlignment="Top" Width="1042" RenderTransformOrigin="0.342,0.539" Margin="0,210,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="name_label" Content="Name" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top" BorderBrush="#FF0F0E0E" BorderThickness="1" RenderTransformOrigin="0.529,-0.2" Grid.Row="1" Height="26" Width="57"/>
+        <TextBox x:Name="name_textbox" HorizontalAlignment="Left" Height="26" Margin="72,12,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" BorderThickness="1" SelectionOpacity="-2">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3"/>
+                    <GradientStop Color="#FFE2E3EA"/>
+                    <GradientStop Color="Black"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Label x:Name="email_label" Content="Email&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,53,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="57" Background="White" BorderThickness="1" BorderBrush="Black"/>
+        <TextBox x:Name="email_textbox" HorizontalAlignment="Left" Height="26" Margin="72,53,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" SelectionBrush="Black">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
+                    <GradientStop Color="#FFABADB3"/>
+                    <GradientStop Color="#FFE2E3EA"/>
+                    <GradientStop Color="Black"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Label x:Name="tel_label" Content="tel&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,93,0,0" Grid.Row="1" VerticalAlignment="Top" Width="57" BorderBrush="Black" BorderThickness="1" Height="26"/>
+        <TextBox x:Name="tel_textbox" HorizontalAlignment="Left" Height="26" Margin="72,93,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" BorderBrush="Black"/>
+        <Label x:Name="add_label" Content="address&#xD;&#xA;" HorizontalAlignment="Left" Height="26" Margin="10,133,0,0" Grid.Row="1" VerticalAlignment="Top" Width="57" BorderBrush="Black" BorderThickness="1"/>
+        <TextBox x:Name="add1_textbox" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Margin="72,133,0,0" Grid.Row="1" BorderBrush="Black"/>
+        <TextBox x:Name="add2_textbox" HorizontalAlignment="Left" Height="27" Margin="72,169,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" BorderBrush="Black"/>
+        <Label Content="zip" HorizontalAlignment="Left" Margin="235,12,0,0" Grid.Row="1" VerticalAlignment="Top" Width="60" Height="26" BorderBrush="Black" BorderThickness="1"/>
+        <TextBox x:Name="zip_textbox" HorizontalAlignment="Left" Height="26" Margin="300,12,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="Black"/>
+        <Label x:Name="city_label" Content="city" HorizontalAlignment="Left" Margin="235,53,0,0" Grid.Row="1" VerticalAlignment="Top" Width="60" BorderBrush="Black" BorderThickness="1" Cursor="None"/>
+        <TextBox x:Name="city_textbox" HorizontalAlignment="Left" Height="28" Margin="300,53,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderBrush="Black"/>
+        <Label x:Name="state_label" Content="state" HorizontalAlignment="Left" Margin="235,93,0,0" Grid.Row="1" VerticalAlignment="Top" Width="60" BorderBrush="Black" BorderThickness="1"/>
+        <ComboBox x:Name="state_combobox" HorizontalAlignment="Left" Margin="300,93,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="28" Background="{x:Null}" BorderBrush="Black" Foreground="Black">
+            <ComboBoxItem>AL</ComboBoxItem>
+            <ComboBoxItem>AK</ComboBoxItem>
+            <ComboBoxItem>AS</ComboBoxItem>
+            <ComboBoxItem>AZ</ComboBoxItem>
+            <ComboBoxItem>AR</ComboBoxItem>
+            <ComboBoxItem>CA</ComboBoxItem>
+            <ComboBoxItem>CO</ComboBoxItem>
+            <ComboBoxItem>CT</ComboBoxItem>
+            <ComboBoxItem>DE</ComboBoxItem>
+            <ComboBoxItem>DC</ComboBoxItem>
+            <ComboBoxItem>FM</ComboBoxItem>
+            <ComboBoxItem>FL</ComboBoxItem>
+            <ComboBoxItem>GA</ComboBoxItem>
+            <ComboBoxItem>GU</ComboBoxItem>
+            <ComboBoxItem>HI</ComboBoxItem>
+            <ComboBoxItem>ID</ComboBoxItem>
+            <ComboBoxItem>IL</ComboBoxItem>
+            <ComboBoxItem>IN</ComboBoxItem>
+            <ComboBoxItem>IA</ComboBoxItem>
+            <ComboBoxItem>KS</ComboBoxItem>
+            <ComboBoxItem>KY</ComboBoxItem>
+            <ComboBoxItem>LA</ComboBoxItem>
+            <ComboBoxItem>ME</ComboBoxItem>
+            <ComboBoxItem>MH</ComboBoxItem>
+            <ComboBoxItem>MD</ComboBoxItem>
+            <ComboBoxItem>MA</ComboBoxItem>
+            <ComboBoxItem>MI</ComboBoxItem>
+            <ComboBoxItem>MN</ComboBoxItem>
+            <ComboBoxItem>MS</ComboBoxItem>
+            <ComboBoxItem>MO</ComboBoxItem>
+            <ComboBoxItem>MT</ComboBoxItem>
+            <ComboBoxItem>NE</ComboBoxItem>
+            <ComboBoxItem>NV</ComboBoxItem>
+            <ComboBoxItem>NH</ComboBoxItem>
+            <ComboBoxItem>NJ</ComboBoxItem>
+            <ComboBoxItem>NM</ComboBoxItem>
+            <ComboBoxItem>NY</ComboBoxItem>
+            <ComboBoxItem>NC</ComboBoxItem>
+            <ComboBoxItem>ND</ComboBoxItem>
+            <ComboBoxItem>MP</ComboBoxItem>
+            <ComboBoxItem>OH</ComboBoxItem>
+            <ComboBoxItem>OK</ComboBoxItem>
+            <ComboBoxItem>OR</ComboBoxItem>
+            <ComboBoxItem>PW</ComboBoxItem>
+            <ComboBoxItem>PA</ComboBoxItem>
+            <ComboBoxItem>PR</ComboBoxItem>
+            <ComboBoxItem>RI</ComboBoxItem>
+            <ComboBoxItem>SC</ComboBoxItem>
+            <ComboBoxItem>SD</ComboBoxItem>
+            <ComboBoxItem>TN</ComboBoxItem>
+            <ComboBoxItem>TX</ComboBoxItem>
+            <ComboBoxItem>UT</ComboBoxItem>
+            <ComboBoxItem>VT</ComboBoxItem>
+            <ComboBoxItem>VI</ComboBoxItem>
+            <ComboBoxItem>VA</ComboBoxItem>
+            <ComboBoxItem>WA</ComboBoxItem>
+            <ComboBoxItem>WV</ComboBoxItem>
+            <ComboBoxItem>WI</ComboBoxItem>
+            <ComboBoxItem>WY</ComboBoxItem>
+        </ComboBox>
+        <Label x:Name="country_label" Content="country" HorizontalAlignment="Left" Margin="235,133,0,0" Grid.Row="1" VerticalAlignment="Top" BorderBrush="Black" Width="60" BorderThickness="1"/>
+        <ComboBox x:Name="country_combobox" HorizontalAlignment="Left" Margin="300,133,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="28" BorderBrush="Black" Background="White">
+            <ComboBoxItem>USA</ComboBoxItem>
+        </ComboBox>
+        <Label x:Name="type_label" Content="type" HorizontalAlignment="Left" Margin="439,12,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="77" BorderBrush="Black" BorderThickness="1"/>
+        <ComboBox x:Name="type_combobox" HorizontalAlignment="Left" Margin="521,12,0,0" Grid.Row="1" VerticalAlignment="Top" Width="132" Height="26" BorderBrush="Black" Background="White">
+               <ComboBoxItem>Visa</ComboBoxItem>
+               <ComboBoxItem>American Express</ComboBoxItem>
+               <ComboBoxItem>Master Card</ComboBoxItem>
+        </ComboBox>
+        <Label x:Name="number_label" Content="number" HorizontalAlignment="Left" Margin="439,53,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77" BorderBrush="Black" BorderThickness="1"/>
+        <TextBox x:Name="number_textbox" HorizontalAlignment="Left" Height="28" Margin="521,53,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" BorderBrush="Black" SelectionBrush="{x:Null}"/>
+        <Label x:Name="date_label" Content="exp.date" HorizontalAlignment="Left" Margin="439,93,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77" BorderBrush="Black" BorderThickness="1"/>
+        <ComboBox x:Name="month_combobox" HorizontalAlignment="Left" Margin="521,93,0,0" Grid.Row="1" VerticalAlignment="Top" Width="42" Height="28" Background="{x:Null}" BorderBrush="Black">
+            <ComboBoxItem>01</ComboBoxItem>
+            <ComboBoxItem>02</ComboBoxItem>
+            <ComboBoxItem>03</ComboBoxItem>
+            <ComboBoxItem>04</ComboBoxItem>
+            <ComboBoxItem>05</ComboBoxItem>
+            <ComboBoxItem>06</ComboBoxItem>
+            <ComboBoxItem>07</ComboBoxItem>
+            <ComboBoxItem>08</ComboBoxItem>
+            <ComboBoxItem>09</ComboBoxItem>
+            <ComboBoxItem>10</ComboBoxItem>
+            <ComboBoxItem>11</ComboBoxItem>
+            <ComboBoxItem>12</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="year_combobox" HorizontalAlignment="Left" Margin="568,93,0,0" Grid.Row="1" VerticalAlignment="Top" Width="85" Height="28" Background="{x:Null}" BorderBrush="Black">
+            <ComboBoxItem>2017</ComboBoxItem>
+            <ComboBoxItem>2018</ComboBoxItem>
+            <ComboBoxItem>2019</ComboBoxItem>
+            <ComboBoxItem>2020</ComboBoxItem>
+            <ComboBoxItem>2021</ComboBoxItem>
+            <ComboBoxItem>2022</ComboBoxItem>
+            <ComboBoxItem>2023</ComboBoxItem>
+            <ComboBoxItem>2024</ComboBoxItem>
+            <ComboBoxItem>2025</ComboBoxItem>
+            <ComboBoxItem>2026</ComboBoxItem>
+            <ComboBoxItem>2027</ComboBoxItem>
+        </ComboBox>
+        <Label x:Name="cvv_label" Content="cvv" HorizontalAlignment="Left" Margin="439,133,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77" BorderBrush="Black" BorderThickness="1"/>
+        <TextBox x:Name="cvv_textbox" HorizontalAlignment="Left" Height="26" Margin="521,133,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" SelectionBrush="{x:Null}" BorderBrush="Black"/>
+        <WebBrowser x:Name = "webBrowser1"  HorizontalAlignment="Left" Height="302" Margin="0,-208,0,0" VerticalAlignment="Top" Width="1042" LoadCompleted="webBrowser1_LoadCompleted">
+            <WebBrowser.ContextMenu>
+                <ContextMenu/>
+            </WebBrowser.ContextMenu>
+        </WebBrowser>
+        <Label x:Name="url" Content="URL&#xD;&#xA;" HorizontalAlignment="Left" Margin="686,12,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="Black" BorderBrush="Black" BorderThickness="1" Height="26" Width="132"/>
+        <TextBox x:Name="URL_Text" HorizontalAlignment="Left" Height="26" Margin="686,58,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="254" Foreground="Black" BorderThickness="1" BorderBrush="Black"/>
+        <Button x:Name="Button1" Content="Buy now!" HorizontalAlignment="Left" Margin="686,99,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="Button1_Click"/>
+    </Grid>
+</Window>

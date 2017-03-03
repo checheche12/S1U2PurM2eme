@@ -1,0 +1,13 @@
+C:\Users\LG\Documents\Visual Studio 2012\Projects\Supreme\Supreme\bin\Debug\Supreme.exe.config
+C:\Users\LG\Documents\Visual Studio 2012\Projects\Supreme\Supreme\bin\Debug\Supreme.exe
+C:\Users\LG\Documents\Visual Studio 2012\Projects\Supreme\Supreme\bin\Debug\Supreme.pdb
+C:\Users\LG\Documents\Visual Studio 2012\Projects\Supreme\Supreme\obj\Debug\Supreme.csproj.ResolveComReference.cache
+C:\Users\LG\Documents\Visual Studio 2012\Projects\Supreme\Supreme\obj\Debug\MainWindow.baml
+C:\Users\LG\Documents\Visual Studio 2012\Projects\Supreme\Supreme\obj\Debug\MainWindow.g.cs
+C:\Users\LG\Documents\Visual Studio 2012\Projects\Supreme\Supreme\obj\Debug\App.g.cs
+C:\Users\LG\Documents\Visual Studio 2012\Projects\Supreme\Supreme\obj\Debug\Supreme_MarkupCompile.cache
+C:\Users\LG\Documents\Visual Studio 2012\Projects\Supreme\Supreme\obj\Debug\Supreme.g.resources
+C:\Users\LG\Documents\Visual Studio 2012\Projects\Supreme\Supreme\obj\Debug\Supreme.Properties.Resources.resources
+C:\Users\LG\Documents\Visual Studio 2012\Projects\Supreme\Supreme\obj\Debug\Supreme.csproj.GenerateResource.Cache
+C:\Users\LG\Documents\Visual Studio 2012\Projects\Supreme\Supreme\obj\Debug\Supreme.exe
+C:\Users\LG\Documents\Visual Studio 2012\Projects\Supreme\Supreme\obj\Debug\Supreme.pdb
