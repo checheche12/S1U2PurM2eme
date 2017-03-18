@@ -28,6 +28,11 @@ namespace Supreme
             InitializeComponent();
         }
 
+        public void setString(string a)
+        {
+            number_textbox.Text = a;
+        }
+
         private void webBrowser1_LoadCompleted(object sender, NavigationEventArgs e)
         {
             if (i == 0)
@@ -120,6 +125,143 @@ namespace Supreme
             webBrowser1.Navigate(URL);
         }
 
+        private void country_combobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void save_1(object sender, RoutedEventArgs e)
+        {
+            FileWrite a = new FileWrite(1);
+        }
+
+        private void save_2(object sender, RoutedEventArgs e)
+        {
+            FileWrite a = new FileWrite(2);
+        }
+
+        private void save_3(object sender, RoutedEventArgs e)
+        {
+            FileWrite a = new FileWrite(3);
+        }
+
+        private void save_4(object sender, RoutedEventArgs e)
+        {
+            FileWrite a = new FileWrite(4);
+        }
+
+        private void load_1(object sender, RoutedEventArgs e)
+        {
+            FileRead a = new FileRead(1);
+        }
+
+        private void load_2(object sender, RoutedEventArgs e)
+        {
+            FileRead a = new FileRead(2);
+        }
+
+        private void load_3(object sender, RoutedEventArgs e)
+        {
+            FileRead a = new FileRead(3);
+        }
+
+        private void load_4(object sender, RoutedEventArgs e)
+        {
+            FileRead a = new FileRead(4);
+        }
+
 
     }
+
+
+    public class FileWrite{
+
+        string select_number;
+        private string [] data = new string [13];
+        string exePath = System.IO.Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName);
+        public FileWrite(int i)
+        {
+            select_number = i.ToString();
+            exePath = exePath + "/"+ select_number + ".txt";
+            data[0] = ((MainWindow)System.Windows.Application.Current.MainWindow).name_textbox.Text;
+            data[1] = ((MainWindow)System.Windows.Application.Current.MainWindow).email_textbox.Text;
+            data[2] = ((MainWindow)System.Windows.Application.Current.MainWindow).tel_textbox.Text;
+            data[3] = ((MainWindow)System.Windows.Application.Current.MainWindow).add1_textbox.Text;
+            data[4] = ((MainWindow)System.Windows.Application.Current.MainWindow).add2_textbox.Text;
+            data[5] = ((MainWindow)System.Windows.Application.Current.MainWindow).zip_textbox.Text;
+            data[6] = ((MainWindow)System.Windows.Application.Current.MainWindow).city_textbox.Text;
+            data[7] = ((MainWindow)System.Windows.Application.Current.MainWindow).number_textbox.Text;
+            data[8] = ((MainWindow)System.Windows.Application.Current.MainWindow).cvv_textbox.Text;
+            data[9] = ((MainWindow)System.Windows.Application.Current.MainWindow).state_combobox.Text;
+            data[10] = ((MainWindow)System.Windows.Application.Current.MainWindow).type_combobox.Text;
+            data[11] = ((MainWindow)System.Windows.Application.Current.MainWindow).month_combobox.Text;
+            data[12] = ((MainWindow)System.Windows.Application.Current.MainWindow).year_combobox.Text;
+
+            System.IO.File.WriteAllText(exePath, data[0], Encoding.Default);
+
+            for (int k = 1; k < 13; k++)
+            {
+                System.IO.File.AppendAllText(exePath, "\r\n"+data[k], Encoding.Default);
+            }
+        }
+
+        ~FileWrite()
+        {
+
+        }
+
+    }
+
+
+    public class FileRead
+    {
+        string select_number;
+        private string[] data = new string[13];
+        string exePath = System.IO.Path.GetDirectoryName(Process.GetCurrentProcess().MainModule.FileName);
+        string line;
+        public FileRead(int i)
+        {
+            try
+            {
+                select_number = i.ToString();
+                exePath = exePath + "/" + select_number + ".txt";
+                System.IO.StreamReader file = new System.IO.StreamReader(exePath);
+                int k = 0;
+                while ((line = file.ReadLine()) != null)
+                {
+                    data[k] = line;
+                    k++;
+                }
+
+                file.Close();
+
+                ((MainWindow)System.Windows.Application.Current.MainWindow).name_textbox.Text = data[0];
+                ((MainWindow)System.Windows.Application.Current.MainWindow).email_textbox.Text = data[1];
+                ((MainWindow)System.Windows.Application.Current.MainWindow).tel_textbox.Text = data[2];
+                ((MainWindow)System.Windows.Application.Current.MainWindow).add1_textbox.Text = data[3];
+                ((MainWindow)System.Windows.Application.Current.MainWindow).add2_textbox.Text = data[4];
+                ((MainWindow)System.Windows.Application.Current.MainWindow).zip_textbox.Text = data[5];
+                ((MainWindow)System.Windows.Application.Current.MainWindow).city_textbox.Text = data[6];
+                ((MainWindow)System.Windows.Application.Current.MainWindow).number_textbox.Text = data[7];
+                ((MainWindow)System.Windows.Application.Current.MainWindow).cvv_textbox.Text = data[8];
+                ((MainWindow)System.Windows.Application.Current.MainWindow).state_combobox.Text = data[9];
+                ((MainWindow)System.Windows.Application.Current.MainWindow).type_combobox.Text = data[10];
+                ((MainWindow)System.Windows.Application.Current.MainWindow).month_combobox.Text = data[11];
+                ((MainWindow)System.Windows.Application.Current.MainWindow).year_combobox.Text = data[12];
+            }
+            catch (Exception)
+            {
+
+            }
+             
+            
+        }
+
+        ~FileRead()
+        {
+
+        }
+
+    }
+
 }
